@@ -1,0 +1,8 @@
+A:
+lw 0
+li B
+j
+addi -1
+B:
+li A
+jal

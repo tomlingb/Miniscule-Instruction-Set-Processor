@@ -1,0 +1,28 @@
+lui 1
+bin AA
+bifz AA
+binz A
+AA:
+lui 100
+A:
+bip B
+lui 100
+B:
+lui 0
+bip CC
+bin CC
+binz CC
+bifz C
+CC:
+lui 100
+C:
+lui -1
+bip DD
+bifz DD
+binz D
+DD:
+lui 100
+D:
+bin E
+lui 100
+E:

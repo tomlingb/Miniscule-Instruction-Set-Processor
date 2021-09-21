@@ -1,0 +1,29 @@
+spi -2
+in
+sw 1
+lui SUM
+ori SUM
+jal
+lw -1
+out
+lui 1
+j
+SUM:
+lw 1 #load x 
+binz A #stay if x ==0 
+sw -1 #make return value 0 
+lw 0 
+J #return 
+A:
+addi -1  
+sw -1 #store x-1 as argument 
+spi -2 #prepare sp 
+lui SUM 
+ori SUM 
+Jal #call sum 
+spi 2 #move sp back 
+lw -3 #load result 
+add 1 #acc = x + result 
+sw -1 #set return value 
+lw 0 
+J #return 

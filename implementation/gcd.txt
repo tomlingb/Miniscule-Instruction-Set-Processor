@@ -1,0 +1,41 @@
+spi -4
+in
+sw 2
+in
+sw 1
+la GCD
+jal
+lw -1
+out
+YayImDone:
+la YayImDone
+j
+GCD:
+lw 1  
+sw -2 #make a copy of b 
+lw 2  
+sw -1 #make a copy of a 
+binz Loop #return if a ==0 
+lw -2  
+sw -1 #move a to return value 
+lw 0  
+j #return 
+Loop:
+lw -2 #load b 
+bifz Done #done if b==0 
+While:
+lw -2 #load b 
+sub -1 #acc = b - a 
+bin if #branch if b-a>0
+sw -2 #store b-a into b 
+la Loop
+j #loop again 
+If:
+lw -1 #load a 
+sub -2 #acc = a - b 
+sw -1 #store a - b into a 
+la Loop  
+j  
+Done:
+lw 0 #return a 
+j

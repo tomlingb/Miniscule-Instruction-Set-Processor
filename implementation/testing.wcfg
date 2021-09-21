@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="C:/git/1920b-csse232-Blue/implementation/integration3/work/integration3_integration3_sch1111_tb_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="integration3_integration3_sch1111_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="9" />
+   <wvobject fp_name="/integration3_integration3_sch1111_tb/FPGAOut" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">FPGAOut[15:0]</obj_property>
+      <obj_property name="ObjectShortName">FPGAOut[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/integration3_integration3_sch1111_tb/MemWriteTest" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">MemWriteTest</obj_property>
+      <obj_property name="ObjectShortName">MemWriteTest</obj_property>
+   </wvobject>
+   <wvobject fp_name="/integration3_integration3_sch1111_tb/CLK" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">CLK</obj_property>
+      <obj_property name="ObjectShortName">CLK</obj_property>
+   </wvobject>
+   <wvobject fp_name="/integration3_integration3_sch1111_tb/FPGAIn" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">FPGAIn[15:0]</obj_property>
+      <obj_property name="ObjectShortName">FPGAIn[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/integration3_integration3_sch1111_tb/reset" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/integration3_integration3_sch1111_tb/UUT/XLXI_1/pc/data" type="array" db_ref_id="1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">data[15:0]</obj_property>
+      <obj_property name="ObjectShortName">data[15:0]</obj_property>
+      <obj_property name="label">pc</obj_property>
+   </wvobject>
+   <wvobject fp_name="/integration3_integration3_sch1111_tb/UUT/XLXI_1/ir/data" type="array" db_ref_id="1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">data[15:0]</obj_property>
+      <obj_property name="ObjectShortName">data[15:0]</obj_property>
+      <obj_property name="label">ir</obj_property>
+   </wvobject>
+   <wvobject fp_name="/integration3_integration3_sch1111_tb/UUT/XLXI_28/data" type="array" db_ref_id="1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">data[15:0]</obj_property>
+      <obj_property name="ObjectShortName">data[15:0]</obj_property>
+      <obj_property name="label">acc</obj_property>
+   </wvobject>
+   <wvobject fp_name="/integration3_integration3_sch1111_tb/UUT/XLXI_30/data" type="array" db_ref_id="1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">data[15:0]</obj_property>
+      <obj_property name="ObjectShortName">data[15:0]</obj_property>
+      <obj_property name="label">sp</obj_property>
+   </wvobject>
+</wave_config>

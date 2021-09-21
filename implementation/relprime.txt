@@ -1,0 +1,63 @@
+spi -1
+in
+sw 1
+la RelPrime
+jal
+lw -1
+out
+la YayImDone
+YayImDone:
+j
+RelPrime:  	
+lw 1  
+sw -1  #make a copy of n 
+li 2  
+sw -2  #load 2 into m 
+RelLoop:
+spi -3  #prepare the sp
+la GCD  
+jal  #call GCD 
+spi 3 #move sp back 
+Lw -4  #get result 
+addi -1  
+bifz RelDone  #See if result != 1 
+RelWhile:
+lw -2  
+addi 1  
+sw -2  #increment m 
+la RelLoop  #loop again ?  
+j  
+RelDone:
+lw -2  
+sw -1  #move m to be the return value 
+lw 0   
+j  #return 
+GCD:
+lw 1  
+sw -2 #make a copy of b 
+lw 2  
+sw -1 #make a copy of a 
+binz Loop #return if a ==0 
+lw -2  
+sw -1 #move a to return value 
+lw 0  
+j #return 
+Loop:
+lw -2 #load b 
+bifz Done #done if b==0 
+While:
+lw -2 #load b 
+sub -1 #acc = b - a 
+bin if #branch if b-a>0
+sw -2 #store b-a into b 
+la Loop
+j #loop again 
+If:
+lw -1 #load a 
+sub -2 #acc = a - b 
+sw -1 #store a - b into a 
+la Loop  
+j  
+Done:
+lw 0 #return a 
+j

@@ -1,0 +1,8 @@
+li -5 #acc = -5
+sw -1 #nothing
+li 3 #acc = 3
+addi 2 #acc = 5
+add -1 #acc = 0
+ori 100 #acc = 100 (8'b01100100)
+andi 20 #acc =  4    (8'b00010100)
+lw -1 #acc = -5
